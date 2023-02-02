@@ -1,0 +1,257 @@
+/* Work Sans (fonte variável) apenas para fonte do header no título principal. */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Sofia Sans Condensed (fonte variável) para títulos e subtítulos. */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Open Sans (fonte variável), para corpos de texto. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+
+:root{
+    --cor01: #0B5ACF;
+    --cor02: #1A75D4;
+    --cor03: #349BE0;
+    --cor04: #74BFE6;
+    --cor05: #97CCEC;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    background-color: #97CCEC;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+header > h1, header > h2, section > h2, footer > p{
+    font-family: 'Work Sans', sans-serif;
+    font-display: swap;
+}
+
+div.descricao > h2, div.descricao > h3, div.descricao > h4, section.lista > ul > a > li > p.titulo, p.subtitulo, p.data{
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-display: swap;
+}
+
+section > p, div.arquivo > a, div.voltar > a{
+    font-family: 'Open Sans', sans-serif;
+    font-display: swap;
+}
+
+
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02), var(--cor03), var(--cor04), var(--cor05));
+    min-height: 150px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+header > h1{
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header > h2{
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+    padding: 0px 10px 20px 10px;
+}
+
+
+
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 30px 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.267);
+}
+
+
+
+
+section > p{
+    line-height: 1.5em;
+}
+
+section.artigos{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+section > h2{
+    background-color: var(--cor01);
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+
+    padding: 10px 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+a.cartao{
+    text-decoration: none;
+}
+
+div.cartao{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: 8px solid var(--cor01);
+    transition-duration: 0.5s;
+}
+
+div.cartao:hover{
+    border: 8px solid var(--cor05);
+    transition-duration: 0.5s;
+}
+
+div.preview{
+    width: 500px;
+    height: 200px;
+    border-bottom: 2px solid var(--cor02);
+}
+
+div.descricao{
+    padding: 5px;
+}
+
+div.descricao > h2{
+    color: var(--cor01);
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+div.descricao > h3{
+    color:rgb(100, 100, 100);
+    font-size: 1em;
+    margin-bottom: 3px;
+}
+
+div.descricao > h4{
+    color:rgb(100, 100, 100);
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+
+
+
+footer{
+    background-color: var(--cor01);
+    padding: 10px 0px;
+}
+
+footer > p{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+section.lista{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+section.lista > ul{
+    list-style-type: none;
+}
+
+section.lista > ul > a > li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top: 2px solid var(--cor05);
+    border-bottom: 2px solid var(--cor05);
+    transition-duration: 1s;
+}
+
+section.lista > ul > a > li:hover{
+    background-color: var(--cor05);
+    transition-duration: 1s;
+}
+
+section.lista > ul > a > li:active{
+    background-color: var(--cor03);
+}
+
+section.lista > ul > a > li > p.titulo{
+    color: var(--cor01);
+    font-size: 2em;
+    font-weight: 800;
+}
+
+section.lista > ul > a > li > p.subtitulo{
+    color: rgb(100, 100, 100);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+section.lista > ul > a > li > p.data{
+    color: rgb(100, 100, 100);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+
+
+div.arquivo, div.voltar{
+    background-color: var(--cor01);
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    border: outset;
+    transition-duration: 0.5s;
+}
+
+div.arquivo:hover, div.voltar:hover{
+    background-color: var(--cor05);
+    transition-duration: 0.5s;
+}
+
+div.arquivo:active, div.voltar:active{
+    border: inset;
+}
+
+div.arquivo > a, div.voltar > a{
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}

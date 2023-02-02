@@ -1,0 +1,235 @@
+/* Work Sans (fonte variável) apenas para fonte do header no título principal. */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Sofia Sans Condensed (fonte variável) para títulos e subtítulos. */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Open Sans (fonte variável), para corpos de texto. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* IA.1 - Definindo as variáveis de cor e as margens zeradas por padrão para a página em geral. */
+
+:root{
+    --cor01: #0B5ACF;
+    --cor02: #1A75D4;
+    --cor03: #349BE0;
+    --cor04: #74BFE6;
+    --cor05: #97CCEC;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    background-color: #97CCEC;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+body > header > h1, body > header > h2, article > h4, aside > h3, footer > p{
+    font-family: 'Work Sans', sans-serif;
+    font-display: swap;
+}
+
+article > header > h1, p.aviso, article > header> h2, article > header > h3, figcaption{
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-display: swap;
+}
+
+article > p, aside > h4, aside > p, div.voltar > a{
+    font-family: 'Open Sans', sans-serif;
+    font-display: swap;
+}
+
+
+
+
+/* IA.2 - Configuração para o header que deverá ser usado em todos os tipos de página. */
+
+body > header{
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02), var(--cor03), var(--cor04), var(--cor05));
+    min-height: 150px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+body > header > h1{
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body > header > h2{
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+    padding: 0px 10px 20px 10px;
+}
+
+
+
+
+/* IA.3 - Para o conteiner principal de conteúdo. */
+article{
+    background-color: white;
+    min-width: 300px;
+    max-width: 900px;
+    padding: 30px 80px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.267);
+}
+
+article > header{
+    margin-bottom: 40px;
+}
+
+article > header > h1{
+    color: var(--cor01);
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+p.aviso, article > header> h2, article > header > h3{
+    font-display: swap;
+    font-weight: 400;
+}
+
+article > header > h2{
+    color: rgb(100, 100, 100);
+    font-size: 2em;
+    font-weight: 400;
+}
+
+article > header > h3{
+    color: rgb(100, 100, 100);
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+p.aviso{
+    color: rgb(192, 69, 69);
+    font-size: 1.5em;
+}
+
+
+
+
+article > h4{
+    color: white;
+    background-image: linear-gradient(to right, var(--cor01), var(--cor05));
+    font-size: 1.5em;
+    font-weight: 400;
+    text-indent: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+article > p{
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div.imagem{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+img{
+    width: 100%;
+}
+
+img.menor{
+    max-width: 500px;
+}
+
+img.maior{
+    max-width: 800px;
+}
+
+figcaption{
+    color: rgb(100, 100, 100);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+
+
+aside{
+    background-color: var(--cor05);
+    margin: auto;
+    max-width: 600px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.745);
+}
+
+aside > h3{
+    color: white;
+    font-weight: 500;
+    background-color: var(--cor02);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+aside > h4, aside > p{
+    padding: 5px;
+}
+
+
+
+
+div.voltar{
+    background-color: var(--cor01);
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    border: outset;
+}
+
+div.voltar:active{
+    border: inset;
+}
+
+div.voltar > a{
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+
+
+
+footer{
+    background-color: var(--cor01);
+    padding: 10px 0px;
+}
+
+footer > p{
+    color: white;
+    text-align: center;
+}

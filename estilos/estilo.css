@@ -195,6 +195,7 @@ section.lista > ul{
 }
 
 section.lista > ul > a > li{
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: -20px;

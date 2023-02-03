@@ -55,6 +55,7 @@ article > p, aside > h4, aside > p, div.voltar > a{
 
 body > header{
     background-image: linear-gradient(to bottom, var(--cor01), var(--cor02), var(--cor03), var(--cor04), var(--cor05));
+    text-align: center;
     min-height: 150px;
     padding-top: 40px;
     margin: auto;
@@ -226,6 +227,7 @@ div.voltar > a{
 
 footer{
     background-color: var(--cor01);
+    text-align: center;
     padding: 10px 0px;
 }
 

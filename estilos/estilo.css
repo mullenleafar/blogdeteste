@@ -54,6 +54,7 @@ section > p, div.arquivo > a, div.voltar > a{
 
 header{
     background-image: linear-gradient(to bottom, var(--cor01), var(--cor02), var(--cor03), var(--cor04), var(--cor05));
+    text-align: center;
     min-height: 150px;
     padding-top: 40px;
     margin: auto;
@@ -172,6 +173,7 @@ div.descricao > h4{
 
 footer{
     background-color: var(--cor01);
+    text-align: center;
     padding: 10px 0px;
 }
 

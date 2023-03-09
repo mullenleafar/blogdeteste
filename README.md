@@ -6,3 +6,4 @@ Lembre-se de que o conteúdo dos artigos reflete apenas uma "opinião", e portan
 Problemas na versão atual:
 * Necessário tornar responsivo o tamanho dos cartões de artigos para dispositivos móveis.
 [Consertarei à medida em que for avançando nos estudos.]
+* Necessário ajustar o tamanho mínimo do artigo para dispositivos móveis.

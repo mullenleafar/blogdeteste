@@ -125,8 +125,8 @@ a.cartao{
 }
 
 div.cartao{
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -140,9 +140,14 @@ div.cartao:hover{
 }
 
 div.preview{
-    width: 500px;
-    height: 200px;
+    width: 400px;
+    height: 150px;
     border-bottom: 2px solid var(--cor02);
+}
+
+div.preview img{
+    width: 400px;
+    height: 150px;
 }
 
 div.descricao{

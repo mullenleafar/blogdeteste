@@ -156,20 +156,20 @@ div.descricao{
 
 div.descricao > h2{
     color: var(--cor01);
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 800;
     margin-bottom: 3px;
 }
 
 div.descricao > h3{
     color:rgb(100, 100, 100);
-    font-size: 1em;
+    font-size: 0.9em;
     margin-bottom: 3px;
 }
 
 div.descricao > h4{
     color:rgb(100, 100, 100);
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 400;
 }
 
